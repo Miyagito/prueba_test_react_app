@@ -1,0 +1,330 @@
+[
+  {
+    "id": 1,
+    "category": "Hardware",
+    "questionText": "¿Qué componente de hardware almacena datos permanentemente en un ordenador?",
+    "options": [
+      { "id": "a", "text": "RAM", "isCorrect": false },
+      { "id": "b", "text": "CPU", "isCorrect": false },
+      { "id": "c", "text": "Disco duro", "isCorrect": true },
+      { "id": "d", "text": "Tarjeta gráfica", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 2,
+    "category": "Hardware",
+    "questionText": "¿Cuál de los siguientes no es un tipo de puerto de hardware en un ordenador?",
+    "options": [
+      { "id": "a", "text": "USB", "isCorrect": false },
+      { "id": "b", "text": "Ethernet", "isCorrect": false },
+      { "id": "c", "text": "HDMI", "isCorrect": false },
+      { "id": "d", "text": "Adobe Reader", "isCorrect": true }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 3,
+    "category": "Hardware",
+    "questionText": "¿Qué dispositivo de hardware se utiliza para imprimir documentos?",
+    "options": [
+      { "id": "a", "text": "Ratón", "isCorrect": false },
+      { "id": "b", "text": "Teclado", "isCorrect": false },
+      { "id": "c", "text": "Impresora", "isCorrect": true },
+      { "id": "d", "text": "Escáner", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 4,
+    "category": "Hardware",
+    "questionText": "¿Cuál de los siguientes componentes de hardware es responsable de procesar datos en un ordenador?",
+    "options": [
+      { "id": "a", "text": "GPU", "isCorrect": false },
+      { "id": "b", "text": "CPU", "isCorrect": true },
+      { "id": "c", "text": "RAM", "isCorrect": false },
+      { "id": "d", "text": "SSD", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 5,
+    "category": "Hardware",
+    "questionText": "¿Qué tipo de dispositivo de hardware se utiliza para almacenar datos de manera temporal?",
+    "options": [
+      { "id": "a", "text": "CPU", "isCorrect": false },
+      { "id": "b", "text": "RAM", "isCorrect": true },
+      { "id": "c", "text": "Disco duro", "isCorrect": false },
+      { "id": "d", "text": "GPU", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 6,
+    "category": "Hardware",
+    "questionText": "¿Qué componente de hardware se utiliza para mostrar imágenes en un monitor?",
+    "options": [
+      { "id": "a", "text": "CPU", "isCorrect": false },
+      { "id": "b", "text": "GPU", "isCorrect": true },
+      { "id": "c", "text": "RAM", "isCorrect": false },
+      { "id": "d", "text": "SSD", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 7,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un sistema operativo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Un programa de edición de texto",
+        "isCorrect": false
+      },
+      { "id": "b", "text": "Un tipo de procesador", "isCorrect": false },
+      {
+        "id": "c",
+        "text": "Un software que gestiona recursos de hardware y proporciona servicios a programas de aplicación",
+        "isCorrect": true
+      },
+      { "id": "d", "text": "Una unidad de almacenamiento", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 8,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un archivo?",
+    "options": [
+      { "id": "a", "text": "Una carpeta", "isCorrect": false },
+      { "id": "b", "text": "Una unidad de almacenamiento", "isCorrect": false },
+      {
+        "id": "c",
+        "text": "Una colección de datos relacionados tratados como una unidad por un programa",
+        "isCorrect": true
+      },
+      { "id": "d", "text": "Una aplicación de software", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 9,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un navegador web?",
+    "options": [
+      { "id": "a", "text": "Un tipo de procesador", "isCorrect": false },
+      { "id": "b", "text": "Una unidad de almacenamiento", "isCorrect": false },
+      {
+        "id": "c",
+        "text": "Un software utilizado para navegar por internet y ver páginas web",
+        "isCorrect": true
+      },
+      { "id": "d", "text": "Un sistema operativo", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 10,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un servidor?",
+    "options": [
+      { "id": "a", "text": "Un tipo de procesador", "isCorrect": false },
+      { "id": "b", "text": "Una unidad de almacenamiento", "isCorrect": false },
+      {
+        "id": "c",
+        "text": "Un ordenador o sistema informático que proporciona recursos, datos, servicios o programas a otros ordenadores, conocidos como clientes, a través de una red",
+        "isCorrect": true
+      },
+      { "id": "d", "text": "Una aplicación de software", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 11,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un enlace (link) en informática?",
+    "options": [
+      { "id": "a", "text": "Una carpeta", "isCorrect": false },
+      { "id": "b", "text": "Un tipo de procesador", "isCorrect": false },
+      {
+        "id": "c",
+        "text": "Un elemento que permite acceder a otra página o recurso web haciendo clic en él",
+        "isCorrect": true
+      },
+      { "id": "d", "text": "Un sistema operativo", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 12,
+    "category": "Conceptos básicos",
+    "questionText": "¿Qué es un protocolo de red?",
+    "options": [
+      { "id": "a", "text": "Un sistema operativo", "isCorrect": false },
+      {
+        "id": "b",
+        "text": "Un conjunto de reglas y convenciones que rigen la comunicación entre dispositivos en una red",
+        "isCorrect": true
+      },
+      { "id": "c", "text": "Una aplicación de software", "isCorrect": false },
+      { "id": "d", "text": "Una unidad de almacenamiento", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 13,
+    "category": "Humor",
+    "questionText": "¿Cuántos programadores se necesitan para cambiar una bombilla?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguno, es un problema de hardware",
+        "isCorrect": false
+      },
+      {
+        "id": "b",
+        "text": "Uno, pero necesita un stack overflow",
+        "isCorrect": true
+      },
+      {
+        "id": "c",
+        "text": "Dos, uno para escribir el código y otro para solucionar los bugs",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Tres, uno para escribir el código, uno para revisarlo y uno para tomar café",
+        "isCorrect": false
+      }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 14,
+    "category": "Humor",
+    "questionText": "¿Qué le dice un árbol binario a otro?",
+    "options": [
+      { "id": "a", "text": "¿Qué tal el viaje?", "isCorrect": false },
+      {
+        "id": "b",
+        "text": "¿Puedo tomar tu raíz cuadrada?",
+        "isCorrect": true
+      },
+      {
+        "id": "c",
+        "text": "¿Podemos ser amigos de la raíz cuadrada?",
+        "isCorrect": false
+      },
+      { "id": "d", "text": "¿Qué tal tu balance?", "isCorrect": false }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 15,
+    "category": "Humor",
+    "questionText": "¿Por qué los programadores prefieren los días de lluvia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque la lluvia ayuda a depurar el código",
+        "isCorrect": true
+      },
+      {
+        "id": "b",
+        "text": "Porque pueden usar la lluvia como excusa para no salir de casa",
+        "isCorrect": false
+      },
+      {
+        "id": "c",
+        "text": "Porque el sonido de la lluvia les inspira para escribir código",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Porque así no se les ocurren ideas y pueden tomarse un descanso",
+        "isCorrect": false
+      }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 16,
+    "category": "Humor",
+    "questionText": "¿Cuál es el animal favorito de un programador?",
+    "options": [
+      {
+        "id": "a",
+        "text": "El gato, porque es independiente y tranquilo",
+        "isCorrect": false
+      },
+      {
+        "id": "b",
+        "text": "La serpiente, porque le gusta Python",
+        "isCorrect": true
+      },
+      {
+        "id": "c",
+        "text": "El perro, porque es leal y cariñoso",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "El oso, porque hiberna en invierno",
+        "isCorrect": false
+      }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 17,
+    "category": "Humor",
+    "questionText": "¿Por qué los programadores siempre confunden Halloween con Christmas?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque siempre están pensando en regalos",
+        "isCorrect": false
+      },
+      { "id": "b", "text": "Porque oct 31 == dec 25", "isCorrect": true },
+      {
+        "id": "c",
+        "text": "Porque les gusta disfrazarse y decorar la casa",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Porque siempre están ocupados trabajando y se olvidan de las fechas",
+        "isCorrect": false
+      }
+    ],
+    "userAnswer": null
+  },
+  {
+    "id": 18,
+    "category": "Humor",
+    "questionText": "¿Cómo se llama el superhéroe favorito de un programador?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spiderman, porque teje su telaraña",
+        "isCorrect": false
+      },
+      {
+        "id": "b",
+        "text": "Ironman, porque es un genio de la tecnología",
+        "isCorrect": true
+      },
+      {
+        "id": "c",
+        "text": "Batman, porque tiene un superordenador en la cueva",
+        "isCorrect": false
+      },
+      {
+        "id": "d",
+        "text": "Flash, porque siempre está corriendo para cumplir deadlines",
+        "isCorrect": false
+      }
+    ],
+    "userAnswer": null
+  }
+]
