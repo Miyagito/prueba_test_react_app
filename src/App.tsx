@@ -1,18 +1,15 @@
-import React from 'react';
-import { Button } from './components/common/Button';
+import { Outlet } from 'react-router-dom';
+import { Header } from './components/common/Header';
 
-const App = () => {
+export const App = () => {
   return (
     <div className="App">
-      <Button
-        onClick={function (): void {
-          throw new Error('Function not implemented.');
-        }}
-      >
-        Realizar Prueba
-      </Button>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Outlet />
+      </main>
     </div>
   );
 };
-
-export default App;
