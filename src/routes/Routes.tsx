@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
         element: <ResultTestScreen />
       },
       {
-        path: 'resultado-prueba',
+        path: 'realizar-prueba',
         element: <TestScreen />
       }
     ]
