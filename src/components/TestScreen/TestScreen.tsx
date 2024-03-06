@@ -1,15 +1,19 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import usePreguntas from '../../hooks/usePreguntas';
 import { PreguntaType } from '../../types/pregunta/preguntaTypes';
 import { OptionList } from '../common/OptionList';
 import { Button } from '../common/Button';
+import { useNavigate } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import { respuestasState } from '../../atoms/respuestasState';
 import styles from './TestScreen.module.scss';
 
 export const TestScreen: FC = () => {
-  const [preguntas, loading, error] = usePreguntas('Humor');
-  const [respuestasUsuario, setRespuestasUsuario] = useState<{
-    [key: string]: string;
-  }>({});
+  const category = 'Humor';
+  const [preguntas, loading, error] = usePreguntas(category);
+  const navigate = useNavigate();
+  const [respuestasUsuario, setRespuestasUsuario] =
+    useRecoilState(respuestasState);
 
   const handleOptionChange = (preguntaId: number, opcionId: string) => {
     setRespuestasUsuario({
@@ -20,6 +24,7 @@ export const TestScreen: FC = () => {
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
+    navigate('/');
   };
 
   return (
@@ -42,13 +47,7 @@ export const TestScreen: FC = () => {
               </ul>
             </div>
           ))}
-          <Button
-            type="submit"
-            className={styles.enviar}
-            onClick={function (): void {
-              throw new Error('Function not implemented.');
-            }}
-          >
+          <Button type="submit" className={styles.enviar}>
             Finalizar
           </Button>
         </form>

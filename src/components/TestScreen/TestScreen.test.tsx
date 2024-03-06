@@ -1,4 +1,5 @@
 import { render, screen, waitFor } from '@testing-library/react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { TestScreen } from './TestScreen';
 import usePreguntas from '../../hooks/usePreguntas';
 import { RecoilRoot } from 'recoil';
@@ -11,7 +12,9 @@ describe('TestScreen', () => {
     (usePreguntas as jest.Mock).mockReturnValue([[], true, '']);
     render(
       <RecoilRoot>
-        <TestScreen />
+        <Router>
+          <TestScreen />
+        </Router>
       </RecoilRoot>
     );
     expect(screen.getByText(/Cargando preguntas.../i)).toBeInTheDocument();
@@ -42,7 +45,9 @@ describe('TestScreen', () => {
     (usePreguntas as jest.Mock).mockReturnValue([mockPreguntas, false, '']);
     render(
       <RecoilRoot>
-        <TestScreen />
+        <Router>
+          <TestScreen />
+        </Router>
       </RecoilRoot>
     );
     for (const pregunta of mockPreguntas) {

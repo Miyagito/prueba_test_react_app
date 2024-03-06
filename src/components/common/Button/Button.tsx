@@ -3,7 +3,7 @@ import styles from './Button.module.scss';
 
 type ButtonProps = {
   children: React.ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
   inlineStyle?: React.CSSProperties;
   type?: string;
