@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
 import { getPreguntas } from '../api/preguntasAPI';
 import { PreguntaType } from '../types/pregunta/preguntaTypes';
+import { useRecoilState } from 'recoil';
+import { preguntasState } from '../atoms/preguntasState';
 
 const usePreguntas = (
   categoria: string
 ): [PreguntaType[] | null, boolean, string] => {
-  const [preguntas, setPreguntas] = useState<PreguntaType[] | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>('');
+  const [preguntas, setPreguntas] = useRecoilState(preguntasState);
 
   useEffect(() => {
     const fetchPreguntas = async () => {
@@ -28,7 +30,7 @@ const usePreguntas = (
     };
 
     fetchPreguntas();
-  }, [categoria]);
+  }, [categoria, setPreguntas]);
 
   return [preguntas, loading, error];
 };
