@@ -1,11 +1,26 @@
-import { Routes, Route } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom';
+import { App } from '../App';
+import { HomeScreen } from '../components/HomeScreen';
+import { ResultTestScreen } from '../components/ResultScreen';
+import { TestScreen } from '../components/TestScreen';
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={''} />
-    </Routes>
-  );
-};
-
-export default AppRoutes;
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <HomeScreen />
+      },
+      {
+        path: 'resultado-prueba',
+        element: <ResultTestScreen />
+      },
+      {
+        path: 'resultado-prueba',
+        element: <TestScreen />
+      }
+    ]
+  }
+]);

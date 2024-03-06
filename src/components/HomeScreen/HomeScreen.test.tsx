@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import { HomeScreen } from './HomeScreen';
 
 test('renders realizar prueba button', () => {
-  render(<App />);
+  render(<HomeScreen />);
   const buttonElement = screen.getByText(/Realizar Prueba/i);
   expect(buttonElement).toBeInTheDocument();
 });

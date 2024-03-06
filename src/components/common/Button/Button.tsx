@@ -8,7 +8,7 @@ type ButtonProps = {
   inlineStyle?: React.CSSProperties;
 };
 
-const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = ({
   children,
   onClick,
   className,
@@ -34,5 +34,3 @@ Button.defaultProps = {
   className: '',
   inlineStyle: {}
 };
-
-export default Button;
