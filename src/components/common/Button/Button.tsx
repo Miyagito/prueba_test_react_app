@@ -6,13 +6,15 @@ type ButtonProps = {
   onClick: () => void;
   className?: string;
   inlineStyle?: React.CSSProperties;
+  type?: string;
 };
 
 export const Button: FC<ButtonProps> = ({
   children,
   onClick,
   className,
-  inlineStyle
+  inlineStyle,
+  type
 }) => {
   const combinedStyle = {
     ...styles,
