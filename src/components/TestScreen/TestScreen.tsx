@@ -6,7 +6,7 @@ import { Button } from '../common/Button';
 import styles from './TestScreen.module.scss';
 
 export const TestScreen: FC = () => {
-  const [preguntas, loading, error] = usePreguntas('Hardware');
+  const [preguntas, loading, error] = usePreguntas('Humor');
   const [respuestasUsuario, setRespuestasUsuario] = useState<{
     [key: string]: string;
   }>({});
