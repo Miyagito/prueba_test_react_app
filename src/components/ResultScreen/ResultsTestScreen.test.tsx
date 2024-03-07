@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { RecoilRoot, MutableSnapshot } from 'recoil';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ResultTestScreen } from './ResultTestScreen';
-import { preguntasState } from '../../atoms/preguntasState'; // Asume que estos son los exports correctos de tus átomos
+import { preguntasState } from '../../atoms/preguntasState';
 import { respuestasState } from '../../atoms/respuestasState';
 
 const initializeState = ({ set }: MutableSnapshot) => {

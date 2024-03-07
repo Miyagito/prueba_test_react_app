@@ -1,12 +1,15 @@
 import { render, screen } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
 import { HomeScreen } from './HomeScreen';
+import { RecoilRoot } from 'recoil';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 test('renders realizar prueba button', () => {
   render(
-    <MemoryRouter>
-      <HomeScreen />
-    </MemoryRouter>
+    <RecoilRoot>
+      <Router>
+        <HomeScreen />
+      </Router>
+    </RecoilRoot>
   );
   const buttonElement = screen.getByText(/Realizar Prueba/i);
   expect(buttonElement).toBeInTheDocument();
