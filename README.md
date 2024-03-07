@@ -12,7 +12,7 @@ Para configurar el entorno de desarrollo y empezar a trabajar en el proyecto, si
 
 1. Clona el repositorio:
 
-### `git clone https://github.com/tu-usuario/tu-repositorio.git`
+### `git clone git@github.com:Miyagito/prueba_test_react_app.git`
 
 2. Instala las dependencias:
 
