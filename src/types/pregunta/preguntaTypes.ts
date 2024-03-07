@@ -2,15 +2,11 @@ export interface PreguntaType {
   id: number;
   category: string;
   questionText: string;
-  options: {
-    id: string;
-    text: string;
-    isCorrect: boolean;
-  }[];
+  options: OptionType[];
 }
 
-export type OptionType = {
+export interface OptionType {
   id: string;
   text: string;
   isCorrect: boolean;
-};
+}

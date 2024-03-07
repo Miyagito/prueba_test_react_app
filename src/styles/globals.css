@@ -1,0 +1,20 @@
+@import './themes/lightTheme.css';
+@import './themes/darkTheme.css';
+
+.light {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
