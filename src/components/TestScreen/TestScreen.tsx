@@ -6,6 +6,8 @@ import { Button } from '../common/Button';
 import { useNavigate } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { respuestasState } from '../../atoms/respuestasState';
+import { areAllQuestionsAnswered } from '../../utils/helpers';
+
 import styles from './TestScreen.module.scss';
 
 export const TestScreen: FC = () => {
@@ -27,6 +29,11 @@ export const TestScreen: FC = () => {
     navigate('/');
   };
 
+  const isSubmitDisabled = !areAllQuestionsAnswered(
+    preguntas ?? [],
+    respuestasUsuario
+  );
+
   return (
     <div className={styles.container}>
       <h1>Preguntas sobre Hardware</h1>
@@ -47,7 +54,11 @@ export const TestScreen: FC = () => {
               </ul>
             </div>
           ))}
-          <Button type="submit" className={styles.enviar}>
+          <Button
+            type="submit"
+            className={styles.enviar}
+            disabled={isSubmitDisabled}
+          >
             Finalizar
           </Button>
         </form>
