@@ -2,6 +2,10 @@
 
 Este proyecto fue iniciado con [Create React App](https://github.com/facebook/create-react-app) y configurado para TypeScript. Se ha personalizado para incluir una estructura de proyecto organizada, integración con React Router para la navegación y pruebas unitarias junto a los componentes.
 
+## Accesibilidad
+
+Este proyecto se ha verificado para accesibilidad utilizando WAVE, una herramienta de evaluación de accesibilidad web, para garantizar que cumple con las pautas WCAG y es accesible para todos los usuarios.
+
 ## Instalación
 
 Para configurar el entorno de desarrollo y empezar a trabajar en el proyecto, sigue estos pasos:
@@ -24,6 +28,7 @@ Abre [http://localhost:3000](http://localhost:3000) para ver el proyecto en el n
 
 La estructura del proyecto ha sido organizada de la siguiente manera para promover la escalabilidad y la mantenibilidad:
 
+```plaintext
 REACT-TEST-APP/
 ├── .vscode/
 │ └── settings.json
@@ -59,7 +64,7 @@ REACT-TEST-APP/
 ├── .eslintrc.js # Configuración de ESLint
 ├── .prettierrc # Configuración de Prettier
 └── README.md # Documentación del proyecto
-
+```
 ## Scripts Disponibles
 
 En el directorio del proyecto, puedes ejecutar:
