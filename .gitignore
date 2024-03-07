@@ -16,7 +16,6 @@
 
 # Carpetas de IDE y editores
 /.idea
-/.vscode
 *.swp
 *.swo
 
