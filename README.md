@@ -27,19 +27,37 @@ La estructura del proyecto ha sido organizada de la siguiente manera para promov
 REACT-TEST-APP/
 ├── .vscode/
 │ └── settings.json
+├── node_modules/ # Dependencias del proyecto
+├── public/ # Archivos públicos como el index.html
 ├── src/
+│ ├── api/ # Interacciones con APIs externas
+│ ├── atoms/ # Atoms de Recoil para manejo de estado
 │ ├── components/ # Carpeta para componentes de UI
 │ │ ├── common/ # Componentes comunes/reutilizables
-│ │ └── screens/ # Componentes de pantalla
+│ │ │ ├── Button/
+│ │ │ ├── ButtonThemeSwitcher/
+│ │ │ └── Header/
+│ │ ├── HomeScreen/
+│ │ ├── ResultScreen/
+│ │ └── TestScreen/
+│ ├── data/ # Datos estáticos o configuraciones
 │ ├── hooks/ # Hooks personalizados
+│ ├── routes/ # Configuración de rutas de la app
 │ ├── services/ # Servicios para manejo de APIs
+│ ├── styles/ # Estilos globales y de temas
+│ │ ├── themes/
+│ │ │ ├── darkTheme.css
+│ │ │ ├── lightTheme.css
+│ │ └── globals.css
 │ ├── types/ # Tipos y interfaces de TypeScript
 │ ├── utils/ # Utilidades y funciones de ayuda
 │ ├── App.tsx # Componente principal de la aplicación
-│ ├── index.tsx # Punto de entrada para React
+│ └── index.tsx # Punto de entrada para React
+├── package.json # Dependencias y scripts del proyecto
+├── tsconfig.json # Configuración de TypeScript
+├── .gitignore # Archivos y carpetas ignorados por Git
 ├── .eslintrc.js # Configuración de ESLint
 ├── .prettierrc # Configuración de Prettier
-├── package.json # Dependencias y scripts del proyecto
 └── README.md # Documentación del proyecto
 
 ## Scripts Disponibles
