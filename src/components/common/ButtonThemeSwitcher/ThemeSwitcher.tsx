@@ -9,9 +9,18 @@ export const ThemeSwitcher = () => {
     setTheme((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'));
   };
 
+  const isDarkMode = theme === 'dark';
+
   return (
-    <button className={styles.themeSwitcherButton} onClick={toggleTheme}>
-      Cambiar a tema {theme === 'light' ? 'oscuro' : 'claro'}
-    </button>
+    <div className={styles.themeSwitcher} onClick={toggleTheme}>
+      <div className={styles.themeSwitcherLabel}>
+        {isDarkMode ? 'LIGHT MODE' : 'DARK MODE'}
+      </div>
+      <div
+        className={`${styles.themeSwitcherToggle} ${isDarkMode ? styles.dark : ''}`}
+      >
+        <div className={styles.themeSwitcherCircle}></div>
+      </div>
+    </div>
   );
 };

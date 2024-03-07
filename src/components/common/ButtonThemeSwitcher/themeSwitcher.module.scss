@@ -1,21 +1,43 @@
-.themeSwitcherButton {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  border: none;
-  border-radius: 20px;
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  background-color: #f7f7f7;
-  color: #0044cc;
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
 
-  &:hover {
-    background-color: #e4e4e4;
-    transform: scale(1.05);
+  .themeSwitcherLabel {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
   }
 
-  &:active {
-    transform: scale(0.95);
+  .themeSwitcherToggle {
+    position: relative;
+    width: 3rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+    background-color: #bbb;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0.1875rem;
+      left: 0.1875rem;
+      width: 1.125rem;
+      height: 1.125rem;
+      background-color: white;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+  }
+
+  .themeSwitcherToggle.dark {
+    background-color: #333;
+
+    &::before {
+      transform: translateX(1.5rem);
+    }
   }
 }
