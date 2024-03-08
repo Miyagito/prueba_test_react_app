@@ -35,7 +35,7 @@ REACT-TEST-APP/
 ├── node_modules/ # Dependencias del proyecto
 ├── public/ # Archivos públicos como el index.html
 ├── src/
-│ ├── api/ # Interacciones con APIs externas
+│ ├── api/ # Servicios para manejo de APIs
 │ ├── atoms/ # Atoms de Recoil para manejo de estado
 │ ├── components/ # Carpeta para componentes de UI
 │ │ ├── common/ # Componentes comunes/reutilizables
@@ -48,7 +48,6 @@ REACT-TEST-APP/
 │ ├── data/ # Datos estáticos o configuraciones
 │ ├── hooks/ # Hooks personalizados
 │ ├── routes/ # Configuración de rutas de la app
-│ ├── services/ # Servicios para manejo de APIs
 │ ├── styles/ # Estilos globales y de temas
 │ │ ├── themes/
 │ │ │ ├── darkTheme.css
